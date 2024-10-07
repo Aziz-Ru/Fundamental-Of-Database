@@ -73,14 +73,15 @@ _The number of times an entity of an entity set participates in a relationship s
 
 ### One-to-One
 When each entity in each entity set can take part only once in the relationship, the cardinality is one-to-one.the total number of tables that can be used in this is 2. 
-
+If conver this ER model to Relational Model we get 3 table two for entites ans 1 for relation. in relation table any primary key can be a rimary key. if we minimize this we need 2 table
+bacause if we merge on table pk to another table.
 <img src="https://media.geeksforgeeks.org/wp-content/uploads/20230920133529/onetoone.jpg"/>
 
 ### One-to-Many
- In one-to-many mapping as well where each entity can be related to more than one entity and the total number of tables that can be used in this is 2.
+ In one-to-many mapping as well where each entity can be related to more than one entity and the total number of tables that can be used in this is 2.First if we convert relational table we get 3 table. If we merge with pk which is many we solve this in 2 table.
 
 ###  Many-to-Many
-When entities in all entity sets can take part more than once in the relationship cardinality is many to many.
+When entities in all entity sets can take part more than once in the relationship cardinality is many to many.we cannot minimize table so that we need 3 atble.Relation table primary key is composite of two pk, because multiple primary key.
 
 <img src="https://media.geeksforgeeks.org/wp-content/uploads/20230920133746/manytomany.jpg"/>
 
