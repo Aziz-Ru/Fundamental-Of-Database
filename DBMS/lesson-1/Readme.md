@@ -71,6 +71,17 @@ TCL is short for Transactional Control Language which acts as an manager for all
 - No Backup and Recovery: The file system does not incorporate any backup and recovery of data if a file is lost or corrupted.
 - Integrity problems. The data values stored in the database must satisfy certain types of consistency constraints.
 
+## Data Abstraction
+Data Abstraction in Database Management Systems (DBMS) is a concept that hides the complexity of the database from the user by providing a simplified view.
+
+### Physical level
+The lowest level of abstraction describes how the data are actually stored.
+
+### Logical level
+The next-higher level of abstraction describes what data are stored in the database, and what relationships exist among those data.
+### View level
+The highest level of abstraction describes only part of the entire database.
+
 ## Types of DBMS Architecture
 
 - 1-Tier Architecture
@@ -87,3 +98,7 @@ The 2-tier architecture is similar to a basic client-server model . The applicat
 ##  3-Tier Architecture
 
 In 3-Tier Architecture , there is another layer between the client and the server. The client does not directly communicate with the server. Instead, it interacts with an application server which further communicates with the database system and then the query processing and transaction management takes place.
+
+## Schema and Instance
+- Instance:The collection of information stored in the database at a particular moment is called an instanceof the database.
+- Schema:The overall design of the database is called the database schema.
