@@ -84,10 +84,53 @@ When entities in all entity sets can take part more than once in the relationshi
 
 <img src="https://media.geeksforgeeks.org/wp-content/uploads/20230920133746/manytomany.jpg"/>
 
+## Participation Constraints in ER-Model
+Participation Constraints tell us that the participation in a relationship can either be total or partial. 
+
+### Total Participation
+
+When each entity in an entity set participates in a relation, it is called Total Participation. 
+
+### Partial Participation
+
+When all entities in the given entity set do not participate in a relation, it is called Partial Participation. 
+
+## Generalization, Specialization and Aggregation in ER Model
+
+### Generalization
+Generalization is the process of extracting common properties from a set of entities and creating a generalized entity from it. 
+
+### Specialization
+In specialization, an entity is divided into sub-entities based on its characteristics. It is a top-down approach where the higher-level entity is specialized into two or more lower-level entities.
 
 
 
+### Aggregation
+Aggregation in DBMS(Database Management System) is a process of combining two or more entities to form a more meaningful entity.
 
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/20230612113346/aggregation.webp"/>
+
+## Reduction of ER diagram to Table
+
+There are some points for converting the ER diagram to the table:
+- Entity type becomes a table.
+- All single-valued attribute becomes a column for the table.
+- A key attribute of the entity type represented by the primary key
+- The multivalued attribute is represented by a separate table.
+- Composite attribute represented by components.
+- Derived attributes are not considered in the table
+
+Way
+- Identify each distinct entity in the diagram represented by a rectangle.
+- Create Separate Tables for Each Entity
+- Map Relationships
+        - For one-to-many relationships, add a foreign key in the “many” table referencing the “one” table’s primary key.
+        - For many-to-many, create a linking table with foreign keys to both related tables.
+
+### To Minimize ER Diagram
+
+- 1 to m or m to 1 relations combine entity and relation which is many,so we need only two table.
+- m to n relation there need 3 table .
 
 
 
