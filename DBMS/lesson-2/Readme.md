@@ -132,6 +132,9 @@ Way
 
 - 1 to m or m to 1 relations combine entity and relation which is many,so we need only two table.
 - m to n relation there need 3 table .
+- 
+- [Mapping from ER Model to Relational Model](https://www.geeksforgeeks.org/mapping-from-er-model-to-relational-model/)
+- [Problems](https://www.gatevidyalay.com/er-diagrams-to-tables/)
 
 
 
